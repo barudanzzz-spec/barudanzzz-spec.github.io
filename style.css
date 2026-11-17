@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: white;
+    line-height: 1.7;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #06b6d4;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #06b6d4;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(
+        135deg,
+        #0b1120,
+        #172554
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #06b6d4;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 7vw, 65px);
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #06b6d4;
+}
+
+.hero h2 {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.hero-content > p:not(.tag) {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #06b6d4;
+    color: #0b1120;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #06b6d4;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    border-color: #06b6d4;
+    transform: translateY(-5px);
+}
+
+#contact .btn {
+    margin-top: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 50px 7%;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+}
